@@ -27,7 +27,7 @@ const Sidebar = () => {
 
   const fetchCanvases = async () => {
     try {
-      const response = await axios.get('https://api-whiteboard-az.onrender.com/api/canvas/list', {
+      const response = await axios.get('https://whiteboard-app-backend-3iuj.onrender.com/api/canvas/list', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setCanvases(response.data);
